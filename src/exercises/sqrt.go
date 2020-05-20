@@ -1,8 +1,6 @@
 package exercises
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Sqrt http://127.0.0.1:3999/moretypes/18
 func Sqrt(x float64) float64 {
