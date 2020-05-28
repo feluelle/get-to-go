@@ -15,7 +15,7 @@ func Readln() string {
 	return scanner.Text()
 }
 
-// DownloadFile ...
+// DownloadFile downloads a file and returns its content
 func DownloadFile(url string) string {
 	resp, err := http.Get(url)
 	if err != nil {

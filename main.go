@@ -6,7 +6,6 @@ import (
 	"os"
 )
 
-// https://blog.golang.org/using-go-modules
 func main() {
 	script := os.Args[1]
 	switch script {
@@ -22,7 +21,8 @@ func main() {
 	case "emojitranslator":
 		fmt.Print("Enter a text to translate to emojis: ")
 		text := Readln()
-		emojis := EmojiTranslator(text)
+		emojis, codes := EmojiTranslator(text)
+		fmt.Printf("Codes: %v\n", codes)
 		fmt.Printf("Emojis: %s\n", emojis)
 	}
 }
